@@ -1,0 +1,15 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+crash.log
+crash.*.log
+
+# Claves privadas y credenciales
+*.pem
+*.key
+
+# Sistema
+.DS_Store
+Thumbs.db
