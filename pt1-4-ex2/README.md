@@ -236,7 +236,7 @@ terraform output public_ips
 terraform output ssh_commands
 ```
 
-### Resultado real del despliegue (28/10/2026)
+### Resultado real del despliegue 
 
 `terraform apply` creó **19 recursos** sin errores:
 
@@ -317,10 +317,4 @@ terraform destroy         → Destroy complete! Resources: 19 destroyed
 
 El despliegue y las capturas se realizaron el **28/10/2026**. Al finalizar se destruyeron todos los recursos para no consumir crédito del laboratorio. Si vuelves a desplegar, ejecuta `terraform destroy` después de las comprobaciones.
 
-## Notas de seguridad y costes
 
-- La clave privada `pt1-4-ex2-key.pem`, el estado de Terraform y el directorio `.terraform/` están excluidos del repositorio.
-- El Security Group solo permite SSH desde la IP indicada en `ssh_cidr`.
-- Las subredes son públicas porque el ejercicio requiere acceso directo a las instancias; en un entorno real se separarían subredes públicas y privadas.
-- Las seis instancias `t3.micro` consumen crédito del laboratorio. Ya se destruyeron tras las capturas; si vuelves a desplegar, ejecuta `terraform destroy` al terminar.
-- Si la IP pública cambia, actualiza `ssh_cidr` en `terraform.tfvars` y vuelve a aplicar.
