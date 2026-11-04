@@ -73,22 +73,4 @@ Para eliminar los recursos y evitar costes:
 terraform destroy
 ```
 
-## Despliegue y validación 
 
-Ambos ejercicios se desplegaron realmente en AWS (cuenta AWS Academy `7678-3940-2707`, región `us-east-1`):
-
-- **Ejercicio 1:** 2 instancias `t3.micro` en estado `running`.
-- **Ejercicio 2:** VPC `10.0.0.0/16`, 3 subredes en `us-east-1a` y 6 instancias `t3.micro` en `running`; las capturas reales de la consola están en `pt1-4-ex2/assets/`.
-- Al finalizar las comprobaciones se ejecutó `terraform destroy` en ambos ejercicios para no consumir crédito del laboratorio.
-
-## Seguridad
-
-- Las credenciales de AWS **no** se almacenan en el repositorio.
-- Los archivos de estado (`terraform.tfstate`), el directorio `.terraform/` y las claves privadas (`*.pem`) están excluidos mediante `.gitignore`.
-- El acceso SSH se limita a la IP indicada en la variable `ssh_cidr`.
-- No se deben subir claves privadas, tokens de sesión ni el contenido de `~/.aws/credentials`.
-
-## Notas
-
-- Las capturas de la consola de AWS correspondientes a la Parte B del Ejercicio 2 se encuentran en `pt1-4-ex2/assets/`.
-- Los diagramas se han realizado con la iconografía oficial de AWS y se incluyen tanto en formato PNG como en su archivo editable de draw.io.
