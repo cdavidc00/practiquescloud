@@ -14,9 +14,9 @@ Iniciarse en la Infraestructura como Código (IaC) creando con Terraform dos ins
 
 ## Topología
 
-![Topología de red del Ejercicio 1](assets/topologia.png)
+![Topología de red del Ejercicio 1](assets/topologiaaa.png)
 
-El diagrama editable se encuentra en [`assets/topologia.drawio`](assets/topologia.drawio).
+El diagrama editable se encuentra en [`assets/topologia.drawio`](assets/topologiaaa.drawio).
 
 ## Recursos creados
 
