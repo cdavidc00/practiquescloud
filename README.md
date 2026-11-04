@@ -73,7 +73,7 @@ Para eliminar los recursos y evitar costes:
 terraform destroy
 ```
 
-## Despliegue y validación (28/10/2026)
+## Despliegue y validación 
 
 Ambos ejercicios se desplegaron realmente en AWS (cuenta AWS Academy `7678-3940-2707`, región `us-east-1`):
 
