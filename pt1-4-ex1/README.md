@@ -104,7 +104,7 @@ chmod 600 pt1-4-ex1-key.pem
 ssh -i pt1-4-ex1-key.pem ec2-user@IP_PUBLICA
 ```
 
-El usuario por defecto de Amazon Linux 2023 es `ec2-user`.
+El usuario por defecto de Amazon Linux es `ec2-user`.
 
 ## Destrucción
 
