@@ -115,7 +115,7 @@ cd pt1-4-ex1
 terraform destroy
 ```
 
-## Resultado del despliegue (28/10/2026)
+## Resultado del despliegue 
 
 `terraform apply` desplegó correctamente las dos instancias en `us-east-1`:
 
@@ -141,9 +141,3 @@ terraform apply           → Apply complete! Resources: 2 added (instancias)
 
 Las dos instancias quedaron en estado `running`. Tras comprobar el despliegue se ejecutó `terraform destroy` para no consumir crédito del laboratorio.
 
-## Notas
-
-- La clave privada `pt1-4-ex1-key.pem` y el estado de Terraform están excluidos del repositorio mediante `.gitignore`.
-- El Security Group solo permite SSH desde la IP indicada; no se abre ningún otro puerto.
-- Las instancias no instalan software adicional: el objetivo del ejercicio es la creación de la infraestructura básica.
-- Al finalizar las pruebas, ejecuta `terraform destroy` para no consumir crédito del laboratorio.
