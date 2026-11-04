@@ -16,7 +16,7 @@ Diseñar y desplegar una red segmentada en AWS con una VPC, tres subredes y seis
 
 ![Topología de red del Ejercicio 2](assets/topologiaa.png)
 
-El diagrama editable se encuentra en [`assets/topologiaa.drawio`](assets/topologiaa.drawio).
+
 
 ---
 
