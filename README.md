@@ -44,7 +44,7 @@ practiquescloud/
 
 
 
-## Puesta en marcha rápida
+## Ejecutar
 
 Cada ejercicio es independiente y se despliega desde su propia carpeta:
 
