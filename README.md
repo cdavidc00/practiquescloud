@@ -42,12 +42,7 @@ practiquescloud/
     └── README.md
 ```
 
-## Requisitos
 
-- [Terraform](https://developer.hashicorp.com/terraform/install) `>= 1.5`
-- Credenciales de AWS con permisos para crear recursos de **EC2**, **VPC**, **Security Groups** y **Key Pairs**
-- Región utilizada: `us-east-1`
-- Sistema operativo de las instancias: **Amazon Linux 2023**
 
 ## Puesta en marcha rápida
 
