@@ -10,7 +10,7 @@
 
 ## Objetivo
 
-Iniciarse en la Infraestructura como Código (IaC) creando con Terraform dos instancias EC2 de Amazon Linux 2023 en la región `us-east-1`.
+Iniciarse en la Infraestructura como Código (IaC) creando con Terraform dos instancias EC2 de Amazon Linux en la región `us-east-1`.
 
 ## Topología
 
