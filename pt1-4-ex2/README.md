@@ -137,15 +137,10 @@ Las capturas deben mostrar:
 1. **VPC y subredes:** VPC `pt1-4-ex2-vpc` con CIDR `10.0.0.0/16` y las tres subredes con sus CIDR.
 2. **Instancias EC2:** listado filtrado por `Project = pt1-4-ex2` con las seis instancias en estado `running`.
 
-Capturas reales tomadas el **28/10/2026** en la consola de AWS (`us-east-1`, cuenta AWS Academy `7678-3940-2707`) sobre la infraestructura desplegada:
-
 ![VPC y subredes en la consola de AWS](assets/vpc_subnets.png)
 
 ![Listado de las seis instancias EC2](assets/ec2_instances.png)
 
-Las capturas individuales también están disponibles en [`assets/vpc.png`](assets/vpc.png) y [`assets/subnets.png`](assets/subnets.png).
-
----
 
 ## Parte C — Despliegue con Terraform
 
