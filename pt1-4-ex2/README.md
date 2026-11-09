@@ -189,38 +189,6 @@ pt1-4-ex2/
 | `aws_key_pair.ssh` | Key pair registrado en AWS |
 | `aws_instance.this` | Seis instancias creadas con `for_each` |
 
-### Uso de `for_each` y `locals`
-
-Las subredes se crean recorriendo el mapa `var.subnets`:
-
-```hcl
-resource "aws_subnet" "this" {
-  for_each = var.subnets
-
-  vpc_id            = aws_vpc.this.id
-  cidr_block        = each.value
-  availability_zone = var.availability_zone
-}
-```
-
-Las seis instancias se generan combinando cada subred con dos índices:
-
-```hcl
-locals {
-  instances = merge([
-    for subnet_key, subnet_cidr in var.subnets : {
-      for index in range(var.instances_per_subnet) :
-      "${subnet_key}-${index + 1}" => {
-        subnet_key  = subnet_key
-        subnet_cidr = subnet_cidr
-        index       = index
-      }
-    }
-  ]...)
-}
-```
-
-De esta forma no hay valores duplicados ni recursos escritos a mano: si se añade una subred al mapa, Terraform crea automáticamente sus dos instancias.
 
 ### Salidas
 
@@ -253,10 +221,6 @@ terraform output ssh_commands
 | `pt1-4-ex2-ec2-B-2` | B | `i-0c569dc0feefc879d` | `3.88.197.183` |
 | `pt1-4-ex2-ec2-C-1` | C | `i-0ac9e2b7ee989e6c7` | `54.196.249.175` |
 | `pt1-4-ex2-ec2-C-2` | C | `i-06bb52b9da4678a8f` | `13.222.49.62` |
-
-Todas las instancias quedaron en estado `running` con **3/3 comprobaciones de estado superadas**. Las IPs públicas son las del momento de la captura y cambian si se vuelve a desplegar.
-
----
 
 ## Despliegue
 
