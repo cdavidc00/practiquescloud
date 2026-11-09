@@ -303,18 +303,3 @@ ssh -i pt1-4-ex2-key.pem ec2-user@IP_PUBLICA
 cd pt1-4-ex2
 terraform destroy
 ```
-
-## Validación realizada
-
-```text
-terraform fmt -check      → correcto
-terraform init            → correcto
-terraform validate        → Success! The configuration is valid.
-terraform plan            → 19 to add, 0 to change, 0 to destroy
-terraform apply           → Apply complete! Resources: 19 added
-terraform destroy         → Destroy complete! Resources: 19 destroyed
-```
-
-El despliegue y las capturas se realizaron el **28/10/2026**. Al finalizar se destruyeron todos los recursos para no consumir crédito del laboratorio. Si vuelves a desplegar, ejecuta `terraform destroy` después de las comprobaciones.
-
-
