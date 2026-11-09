@@ -114,30 +114,3 @@ Para eliminar los recursos y evitar costes:
 cd pt1-4-ex1
 terraform destroy
 ```
-
-## Resultado del despliegue 
-
-`terraform apply` desplegó correctamente las dos instancias en `us-east-1`:
-
-| Instancia | ID | IP pública | Estado |
-| --- | --- | --- | --- |
-| `pt1-4-ex1-web-1` | `i-0fbbb866fdfd6dd2c` | `100.59.190.130` | `running` |
-| `pt1-4-ex1-web-2` | `i-043b959635b2c67d7` | `54.209.48.116` | `running` |
-
-| Recurso | ID / nombre |
-| --- | --- |
-| Security Group | `sg-0e51ae7625ce89a4c` |
-| Key pair | `pt1-4-ex1-key` |
-| AMI Amazon Linux 2023 | `ami-04b938437b69a2c9c` |
-
-## Validación realizada
-
-```text
-terraform fmt -check      → correcto
-terraform init            → correcto
-terraform validate        → Success! The configuration is valid.
-terraform apply           → Apply complete! Resources: 2 added (instancias)
-```
-
-Las dos instancias quedaron en estado `running`. Tras comprobar el despliegue se ejecutó `terraform destroy` para no consumir crédito del laboratorio.
-
