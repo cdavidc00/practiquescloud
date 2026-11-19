@@ -30,7 +30,7 @@ terraform plan
 terraform apply
 ```
 
-![terraform apply](assets/terraform-apply.png)
+![terraform apply](apply.PNG)
 
 ## 5. Comprovacions
 
