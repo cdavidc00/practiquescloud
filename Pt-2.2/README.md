@@ -48,7 +48,7 @@ terraform apply
 ![Security group](assets/security-group.png)
 
 ### Instàncies EC2
-![EC2](assets/ec2.png)
+![EC2](ec2.PNG)
 
 ### Prova de connectivitat
 
