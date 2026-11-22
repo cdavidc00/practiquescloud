@@ -46,13 +46,3 @@ terraform apply
 ### Instàncies EC2
 ![EC2](ec2.PNG)
 
-### Prova de connectivitat
-
-Connexió SSH a `ec2-a` i ping a la IP privada d'`ec2-b`:
-
-```bash
-ssh -i labsuser.pem ec2-user@<IP_PUBLICA_EC2_A>
-ping <IP_PRIVADA_EC2_B>
-```
-
-![Ping](assets/ping.png)
