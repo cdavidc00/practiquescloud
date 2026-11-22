@@ -34,11 +34,11 @@ terraform apply
 ![VPC](assets/vpc.PNG)
 
 ### Subxarxes
-![Subxarxes](assets/subnets.png)
+![Subxarxes](assets/subxarxes.png)
 
 ### Internet Gateway i taula de rutes
-![IGW](assets/igw.png)
-![Route table](assets/route-table.png)
+![IGW](assets/igw.PNG)
+![Route table](assets/route_tables.PNG)
 
 ### Security Group
 ![Security group](assets/security.PNG)
