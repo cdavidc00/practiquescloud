@@ -44,5 +44,5 @@ terraform apply
 ![Security group](assets/security.PNG)
 
 ### Instàncies EC2
-![EC2](/assets/ec2.PNG)
+![EC2](assets/ec2.PNG)
 
