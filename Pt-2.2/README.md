@@ -13,10 +13,6 @@ Infraestructura a AWS (regió `us-east-1`) desplegada amb Terraform:
 - Security Group: SSH des de qualsevol lloc, ICMP només des de la VPC, tot el trànsit sortint permès
 - 2 instàncies EC2 `t3.micro` (Amazon Linux 2023), `ec2-a` i `ec2-b`, amb la clau `vockey`
 
-## 2. Diagrama
-
-![Diagrama](assets/diagrama.png)
-
 ## 3. Explicació del codi (`main.tf`)
 
 _Explica amb les teves paraules cada bloc: provider, VPC, subnets, IGW, route table, security group, instàncies._
