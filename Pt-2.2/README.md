@@ -30,12 +30,12 @@ terraform plan
 terraform apply
 ```
 
-![terraform apply](apply.PNG)
+![terraform apply](assets/apply.PNG)
 
 ## 5. Comprovacions
 
 ### VPC
-![VPC](assets/vpc.png)
+![VPC](assets/vpc.PNG)
 
 ### Subxarxes
 ![Subxarxes](assets/subnets.png)
@@ -45,7 +45,7 @@ terraform apply
 ![Route table](assets/route-table.png)
 
 ### Security Group
-![Security group](assets/security-group.png)
+![Security group](assets/security.PNG)
 
 ### Instàncies EC2
 ![EC2](ec2.PNG)
@@ -60,11 +60,3 @@ ping <IP_PRIVADA_EC2_B>
 ```
 
 ![Ping](assets/ping.png)
-
-## 6. Destrucció dels recursos
-
-```bash
-terraform destroy
-```
-
-![terraform destroy](assets/terraform-destroy.png)
